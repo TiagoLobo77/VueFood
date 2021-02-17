@@ -1,8 +1,8 @@
 <template>
     <div>
         <preloader-component></preloader-component>
-
-        <header-component/>
+        
+        <header-component/>        
 
         <!-- Page Content -->
         <div class="container container-body">
@@ -18,7 +18,6 @@ import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import HeaderComponent from './_partials/header'
 import FooterComponent from './_partials/footer'
- 
 
 export default {
     components: {

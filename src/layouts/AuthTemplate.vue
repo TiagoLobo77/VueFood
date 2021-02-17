@@ -17,7 +17,6 @@ export default {
 </script>
 
 <style scoped>
-
-    @import url('../assets/css/reset.css');
-    @import url('../assets/css/auth.css');
+@import url('../assets/css/reset.css');
+@import url('../assets/css/auth.css');
 </style>

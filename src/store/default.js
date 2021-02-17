@@ -8,9 +8,8 @@ export const mutations = {
         state.preloader = status
         state.textPreloader = 'Carregando...'
     },
-      
-    SET_TEXT_PRELOADER (state, text) {
-            state.textPreloader = text
-        },
 
+    SET_TEXT_PRELOADER (state, text) {
+        state.textPreloader = text
+    },
 }

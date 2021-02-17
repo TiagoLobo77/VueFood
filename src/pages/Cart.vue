@@ -1,5 +1,5 @@
 <template>
-     <!-- cart -->
+    <!-- cart -->
     <div class="card shopping-cart my-4">
         <div class="card-header text-light">
             <i class="fa fa-shopping-cart" aria-hidden="true"></i>

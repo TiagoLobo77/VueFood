@@ -7,25 +7,25 @@
 
         <div class="row my-4">
 
-          <div class="col-lg-4 col-md-4 col-6 mb-4" v-for="(company, index) in companies.data" :key="index">
+          <div class="col-lg-4 col-md-6 mb-4" v-for="(company, index) in companies.data" :key="index">
             <div class="restaurant-card">
-              <a class="logo" href="#" @click.prevent="goStoreCompany(company)">
-                <img v-if="company.image" 
-                 class="card-img-top" 
-                 :src="company.image" 
-                 :alt="company.name">
-                <img v-else 
-                 class="card-img-top" 
-                 src="@/assets/imgs/vue-food.png" 
-                 :alt="company.name"> 
+              <a href="#" @click.prevent="goStoreCompany(company)">
+                <img v-if="company.image"
+                  class="card-img-top"
+                  :src="company.image"
+                  :alt="company.name">
+                <img v-else
+                  class="card-img-top"
+                  src="@/assets/imgs/vue-food.png"
+                  :alt="company.name">
               </a>
               <div class="restaurant-card-body">
                 <h3>
-                  <!-- <router-link :to="{name: 'products', params: {companyFlag: companyFlag}}">
-                    {{ company.name}}
+                  <!-- <router-link :to="{name: 'products', params: {companyFlag: company.flag}}">
+                    {{ company.name }}
                   </router-link> -->
                   <a href="#" @click.prevent="goStoreCompany(company)">
-                     {{ company.name }}
+                    {{ company.name }}
                   </a>
                 </h3>
               </div>
@@ -39,6 +39,7 @@
       <!-- /.col-lg-9 -->
 
     </div>
+    <!-- /.row -->
 </template>
 
 <script>
@@ -70,8 +71,7 @@ export default {
 
     goStoreCompany (company) {
       this.setCompany(company)
-
-      this.$router.push({ name: 'products', params: { companyFlag:company.flag }})
+      this.$router.push({ name: 'products', params: { companyFlag:company.flag  } })
     }
   }
 }

@@ -4,7 +4,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-vuefood">
             <div class="container">
                 <router-link :to="{name: 'home'}" class="navbar-brand">
-                    <img src="@/assets/imgs/logo-vuefood.png" alt="VueFood" class="logo">       
+                    <img src="@/assets/imgs/logo-vuefood.png" alt="VueFood" class="logo">
                 </router-link>
                 <div>
                     <ul class="navbar-nav ml-auto">

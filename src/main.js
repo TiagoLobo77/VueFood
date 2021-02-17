@@ -8,7 +8,7 @@ import store from './store'
 Vue.config.productionTip = false
 
 /**
- * 
+ * Global Components
  */
 Vue.component('preloader-component', () => import('./components/Preloader'))
 

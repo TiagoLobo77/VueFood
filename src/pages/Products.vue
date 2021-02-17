@@ -39,16 +39,16 @@
                   <a href="#">{{ product.title }}</a>
                 </h4>
                 <h5>R$ {{ product.price }}</h5>
-                <!-- <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p> -->
+                <p class="card-text">{{ product.description }}</p>
               </div>
               <div class="card-footer card-footer-custom">
-                <a href="carrinho.html"></a>
                 <router-link :to="{name: 'cart'}">
                     Adicionar no Carrinho <i class="fas fa-cart-plus"></i>
                 </router-link>
               </div>
             </div>
           </div>
+          
 
         </div>
         <!-- /.row -->
@@ -73,13 +73,13 @@ export default {
 
     this.getCategoriesByCompany(this.company.uuid)
           .catch(response => this.$vToastify.error('Falha ao Carregar as Categorias', 'Erro'))
-    
-    // this.getProductsByCompany(this.company.uuid)
-    //       .catch(response => this.$vToastify.error('Falha ao Carregar os Produtos', 'Erro'))
+
+    //this.getProductsByCompany(this.company.uuid)
+          //.catch(response => this.$vToastify.error('Falha ao Carregar os Produtos', 'Erro'))        
     this.loadProducts()
   },
 
-  computed: { 
+  computed: {
     ...mapState({
       company: state => state.companies.companySelected,
       categories: state => state.companies.categoriesCompanySelected
@@ -121,10 +121,10 @@ export default {
 
       this.loadProducts()
     },
-
+    
     categoryInFilter (identify) {
       return identify === this.filters.category ? 'active' : ''
-    },
+    }
   },
 }
 </script>

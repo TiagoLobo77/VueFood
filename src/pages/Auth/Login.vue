@@ -32,7 +32,7 @@
         <div class="mt-4">
           <div class="d-flex justify-content-center links">
             Não tem uma conta?
-            <router-link :to="{name: 'register'} " class="ml-2">Cadastre-se!</router-link>
+            <router-link :to="{name: 'register'}" class="ml-2">Cadastre-se!</router-link>
           </div>
         </div>
       </div>

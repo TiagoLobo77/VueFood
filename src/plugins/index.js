@@ -1,1 +1,1 @@
-require('./VueToastify')
+  require('./VueToastify')
